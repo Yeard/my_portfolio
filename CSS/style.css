@@ -9,7 +9,7 @@
     /* bg color*/
     --primary-color: #FD4766;
     --secondary-color:#19243e;
-    --bg-dark-blue:#18233c;
+    --bg-dark-blue:#0e1628;
     --bg-whit:#fff;
     --gray-color:#e8eaf6bf;
     --gradient-color:linear-gradient(to right, red , yellow);
@@ -295,9 +295,74 @@ button{
     color: var(--text-gray);
 }
 /*services*/
+.services_wrapper .card{
+    background-color: var(--bg-dark-blue);
+    cursor: pointer;
+    transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+    box-shadow:0.65s cubic-bezier(0.05, 0.2, 0.1, 1) ;
+}
+.services_wrapper .card:hover{
+    box-shadow: 0px 2px 70px 0 rgb(253  71  102 /5%);
+    transform: translateY(-7px);
+}
+
+
+
 
 /*port*/
 
+
+.portfolio_wrapper .card{
+    height: 100%;
+    min-height: 350px;
+    overflow: hidden;
+    border: 1px solid var(--bg-whit);
+    cursor: pointer;
+    box-shadow: 0 0 16px 4px var(--bg-dark-blue);
+
+}
+
+.portfolio_wrapper .card span{
+    transition: background-position 4s ease-in-out 0s;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-size: cover;
+}
+
+
+.portfolio_wrapper .card:hover span{
+    background-position: bottom center;
+}
+
+
+
+
 /*con*/
+.contact_wrapper .form-control,
+.contact_wrapper textarea{
+    background-color: transparent;
+    border-color: var(--gray-color);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 20px;
+}
+.contact_wrapper .form-control:hover,
+.contact_wrapper textarea :hover,
+.contact_wrapper .form-control:focus,
+.contact_wrapper textarea:focus{
+    border-color: var(--primary-color);
+    color: var(--text-white);
+
+}
+
+.contact_wrapper .call_details{
+    color: var(--text-gray);
+}
+
+.contact_wrapper .call_details a{
+    font-weight: 700;
+    color: var(--text-gray);
+}
 
 /*foot*/
