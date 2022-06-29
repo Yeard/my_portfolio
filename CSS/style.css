@@ -214,6 +214,15 @@ button{
 }
 
 
+
+.header_wrapper .navbar-toggler{
+    
+    border-color:var(--bg-whit);
+    background-color: var(--primary-color);
+    opacity: 0.8;
+}
+
+
 /*banner*/
 
 .banner_wrapper{
@@ -295,6 +304,14 @@ button{
     display: block;
     color: var(--text-gray);
 }
+
+
+.about_wrapper img{
+    max-width: 98%;
+    max-height: 98%;
+}
+
+
 /*services*/
 .services_wrapper .card{
     background-color: var(--bg-dark-blue);
@@ -364,6 +381,13 @@ button{
 .contact_wrapper .call_details a{
     font-weight: 700;
     color: var(--text-gray);
+}
+
+
+.contact_wrapper img{
+    max-height: 80%;
+    max-width: 80%;
+
 }
 
 /*foot*/
